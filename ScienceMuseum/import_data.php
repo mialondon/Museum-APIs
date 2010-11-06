@@ -1,5 +1,7 @@
 <?php
 
+require_once "../../import_config.ini.php";
+
 echo "Loading file... ";
 
 // loading a local file
@@ -14,12 +16,7 @@ if (file_exists($file)) {
 }
 
 // set up database connections
-// global $wpdb; // run prepare just in case there's dodgy data in the XML ###
-$db_account = 'root';
-$db_password = 'root';
-$db_host = 'localhost';
-$db_name = 'wordpress_mu';
-$db_objecttable = 'wp_matchy_objects';
+$db_objecttable = 'wp_mmg_objects';
 $db_objecttablefields = 'name, accession_number, institution, data_source_url,
       interpretative_date, interpretative_place, image_url';
 $sql = '';
