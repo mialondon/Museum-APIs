@@ -89,6 +89,8 @@ if( sizeof($data) > 0 ){
 
 	}
 
+echo "All done.";
+
 mysql_close($dbc); // tidy up more? ###
 
 }
